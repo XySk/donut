@@ -132,7 +132,7 @@ static PyObject *Donut_Create(PyObject *self, PyObject *args, PyObject *keywds) 
     }
     // parameters to method, DLL function or command line for unmanaged EXE
     if(params != NULL) {
-      strncpy(c.param, params, DONUT_MAX_NAME - 1);
+      strncpy(c.args, params, DONUT_MAX_NAME - 1);
     }
     // runtime version to use for .NET DLL / EXE
     if(runtime != NULL) {
